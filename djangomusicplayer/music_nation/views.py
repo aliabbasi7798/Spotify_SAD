@@ -80,7 +80,7 @@ def signup(request):
             login(request, user)
             return redirect('music_nation:home')
         else:
-            message = 'Looks like a username with that email or password already exists'
+            message = 'A username with this email or password already exists'
             return render(request, 'music_nation/signup.html', {'form':form,'message':message})
     else:
         form = SignUpForm()
