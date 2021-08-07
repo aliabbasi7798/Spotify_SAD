@@ -1,18 +1,17 @@
 {% extends 'music_nation/base.html' %}
 
-{%block title%}
+{%block title%}Album
 {%endblock%}
 {%block content%}
-  <ul class="album-list">
-    <h2>{{ album.album_name }}</h2>
+  <ul class="album_detail-a">
+    <h2 style="color:deeppink; margin-left: 180px"><img src="https://img.icons8.com/ios/452/music-album.png" height="32px"><strong> {{ album.album_name }}</strong></h2>
     {% if album.album_artist == user %}
-    <a href="{% url 'music_nation:delete_album' username album %}">Delete</a>/
-    <a href="{% url 'music_nation:add_song' username album %}">Add new song</a>
+    <a style="color: deepskyblue;margin-left: 180px" href="{% url 'music_nation:delete_album' username album %}"><img src="https://image.flaticon.com/icons/png/512/40/40292.png" height="32px">Delete Album</a>  /
+    <a style="color: deepskyblue;margin-left: 2px" href="{% url 'music_nation:add_song' username album %}"><img src="https://img.icons8.com/ios/452/add-song.png" height="32px">Add new song</a>
     {% endif %}
 
-
     {% for song in songs %}
-      <li >
+      <li style="margin-left: 200px" ><img src="https://icons-for-free.com/iconfiles/png/512/music-131964753036631366.png" height="32px">
         {{song.song_name}}<br/>
         <audio controls>
           <source src="{{ song.song_file.url }}" type="audio/mp3">

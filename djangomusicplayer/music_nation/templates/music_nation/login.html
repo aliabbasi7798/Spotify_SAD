@@ -6,8 +6,8 @@
 <div class="login-a">
 
 {% if user.is_authenticated %}
-<h3><strong>You are already logged in</strong></h3>
-<small>Do you want to <a href="{% url 'music_nation:logout' %}"><strong>LogOut</strong></a></small>
+<h3 style="margin-top: 120px"><strong>You are already logged in</strong></h3>
+<small>Do you want to <a href="{% url 'music_nation:logout' %}"><strong style="color: deeppink">LogOut</strong></a></small>
   </div>
 
 {% else %}

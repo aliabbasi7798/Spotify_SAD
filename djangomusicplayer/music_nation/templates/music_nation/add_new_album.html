@@ -1,15 +1,15 @@
 {% extends 'music_nation/base.html' %}
 
-{%block title%}
+{%block title%}New Album
 {%endblock%}
 {%block content%}
 
-  <div class="container">
-    <h2 style="margin:30px;">Add new album here.</h2>
+  <div class="add_new_song-a" style="padding-bottom: 299px">
+    <h2 style="margin:2px;"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/music-album-2156678-1816535.png" height="35px" >New Album</h2>
     <form method="POST" enctype="multipart/form-data">{# this field is important for file upload #}
       {% csrf_token %}
       {{form.as_p}}
-      <button type="submit" class="save btn btn-default">Save</button>
+      <button type="submit" class="save btn btn-default" style="background: deeppink">Save</button>
     </form>
   </div>
 

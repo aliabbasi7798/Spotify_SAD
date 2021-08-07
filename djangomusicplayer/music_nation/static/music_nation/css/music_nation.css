@@ -47,18 +47,42 @@ body{
     padding-left: 0px;
     padding-right: 00px;
 }
+.signup-a {
+    font-family: "Noto Sans";
+    display: block;
+    color: white;
+    text-align: left;
+    background-image: url("https://media1.popsugar-assets.com/files/thumbor/THhFaA1czdj5E7aPMd3_yawiVOc/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/05/07/163/n/1922729/80e42b505cd2452c101a98.71287665_GettyImages-1140819868/i/Listen-Sing-Along-Your-Favorite-Music.jpg");
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 32px;
+    padding-bottom:475px;
+    padding-left: 0px;
+    padding-right: 00px;
+}
 .artist_detail-a {
     font-family: "Noto Sans";
     display: block;
     color: black;
     text-align: -webkit-center;
     background: black;
-    background-image: url("https://pbs.twimg.com/profile_banners/984189473251627008/1626350051/1500x500");
-    object-fit: cover;
-    padding-top: 10px;
-    padding-bottom:10px;
+    background-image: url("https://i.ibb.co/Tvshhdr/image-2021-08-08-015753.png");
+    background-size: 100%;
+    object-fit: fill;
+    padding-top: 40px;
+    padding-bottom:150px;
+}
 
-
+.album_detail-a {
+    font-family: "Noto Sans";
+    display: block;
+    color: black;
+    text-align: left;
+    background: white;
+    background-size: 100%;
+    object-fit: fill;
+    padding-top: 40px;
+    padding-bottom:150px;
 }
 .add_new_song-a {
     font-family: "Noto Sans";
@@ -73,7 +97,19 @@ body{
     padding-left: 100px;
     padding-right: 00px;
 }
-
+.add_new_album-a {
+    font-family: "Noto Sans";
+    display: block;
+    color: white;
+    text-align: -webkit-left;
+    background-image: url("https://img.wallpapersafari.com/desktop/1366/768/48/55/N90rAE.jpg");
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 130px;
+    padding-bottom:350px;
+    padding-left: 100px;
+    padding-right: 00px;
+}
 .base-a:hover {
     background-color: #bae5ff;
     text-decoration: none;
