@@ -1,7 +1,9 @@
 body{
   /* background-color: #bcc0c533; */
-  background-color: #d5e8ec1a;
+  /*background-color: #d5e8ec1a;*/
 }
+
+
 .bglight {
     list-style-type: none;
     margin: 0;
@@ -19,6 +21,7 @@ body{
   float: right;
 }
 
+
 .base-a {
     display: block;
     color: white;
@@ -30,6 +33,45 @@ body{
     text-align: center;
     text-decoration: none;
 
+}
+.login-a {
+    font-family: "Noto Sans";
+    display: block;
+    color: white;
+    text-align: -webkit-center;
+    background-image: url("https://highonscore.com/wp-content/uploads/2018/04/bigstock_silhouettes_of_concert_crowd-Recovered.jpg");
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 32px;
+    padding-bottom:475px;
+    padding-left: 0px;
+    padding-right: 00px;
+}
+.artist_detail-a {
+    font-family: "Noto Sans";
+    display: block;
+    color: black;
+    text-align: -webkit-center;
+    background: black;
+    background-image: url("https://pbs.twimg.com/profile_banners/984189473251627008/1626350051/1500x500");
+    object-fit: cover;
+    padding-top: 10px;
+    padding-bottom:10px;
+
+
+}
+.add_new_song-a {
+    font-family: "Noto Sans";
+    display: block;
+    color: white;
+    text-align: -webkit-left;
+    background-image: url("https://img.wallpapersafari.com/desktop/1366/768/48/55/N90rAE.jpg");
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 150px;
+    padding-bottom:350px;
+    padding-left: 100px;
+    padding-right: 00px;
 }
 
 .base-a:hover {
@@ -52,6 +94,7 @@ body{
 
 .home-a{
   color: #969847;
+    margin-left: 10px;
 }
 
 .home-a:hover {

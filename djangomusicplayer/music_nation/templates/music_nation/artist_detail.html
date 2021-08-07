@@ -5,14 +5,14 @@
 {% block content %}
 
 
-    <div class="container">
-        <h3 style="margin-left:0px; margin-bottom:30px; ">Profile:<br/></h3>
-
-        <h5 style="list-style-type: none; margin-left:0px; margin-bottom:30px; color: #007bff">{{ profile_fields.first_name }} {{ profile_fields.last_name }}<br/></h5>
-        <li style="list-style-type: none; margin-left:0px; margin-bottom:30px;">Registered email address: {{ profile_fields.email }}<br/></li>
+    <div class="artist_detail-a" >
+        <h3 style="margin-left:180px;text-align: left; margin-bottom:10px; ">Profile:<br/></h3>
+        <h5 style="list-style-type: none; margin-left:0px; margin-bottom:30px; color: deeppink">{{ profile_fields.first_name }} {{ profile_fields.last_name }}<br/></h5>
+        <li style="list-style-type: none; margin-left:0px; margin-bottom:30px;">Email address: {{ profile_fields.email }}<br/></li>
         <li style="list-style-type: none; margin-left:0px; margin-bottom:30px;">Last login: {{ profile_fields.last_login }}<br/></li>
 
-
+    </div>
+    <div class="container">
 
 
 

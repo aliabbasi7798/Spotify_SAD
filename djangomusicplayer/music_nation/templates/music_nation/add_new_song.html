@@ -3,14 +3,15 @@
 {%block title%}
 {%endblock%}
 {%block content%}
+  <div class="add_new_song-a" >
+    <h2 style="margin: 2px;"> <img src="https://icons-for-free.com/iconfiles/png/512/music-131964753036631366.png" height="35px">New Song</h2>
 
-  <div class="container">
-    <h2 style="margin:30px;">Add new song here.</h2>
     <form method="POST" enctype="multipart/form-data">{# this field is important for file upload #}
       {% csrf_token %}
       {{ form.as_p }}
-      <button type="submit" class="save btn btn-default">Save</button>
+      <button type="submit" class="save btn btn-default" style="background: deeppink">Save</button>
     </form>
   </div>
+
 
 {%endblock%}
