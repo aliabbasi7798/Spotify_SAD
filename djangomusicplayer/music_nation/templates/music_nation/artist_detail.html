@@ -6,9 +6,14 @@
 
 
     <div class="artist_detail-a" >
-        <h5 style="list-style-type: none;margin-left:180px;text-align: left; margin-top:50px; color: deeppink;font-size: xx-large;"><b>{{ profile_fields.first_name }} {{ profile_fields.last_name }}</b><br/></h5>
-        <li style="list-style-type: none;margin-left:180px;text-align: left; margin-top:20px; font-size: x-large;">Email address: {{ profile_fields.email }}<br/></li>
-        <li style="list-style-type: none;margin-left:180px;text-align: left; margin-top:20px;font-size: x-large;">Last login: {{ profile_fields.last_login }}<br/></li>
+        <h5 style="list-style-type: none;margin-left:180px;text-align: left; color: deeppink;font-size: x-large;"><b>{{ profile_fields.first_name }} {{ profile_fields.last_name }}</b><br/></h5>
+        <li style="list-style-type: none;margin-left:180px;text-align: left; margin-top:20px; font-size: small;color: blueviolet">Email address<br/></li>
+        <li style="list-style-type: none;margin-left:180px;text-align: left; margin-top:0px; font-size: medium;">{{ profile_fields.email }}<br/></li>
+        <hr  style="margin-left: 180px; width: 400px; color: black;">
+
+        <li style="list-style-type: none;margin-left:180px;text-align: left; margin-top:0px;font-size: small;color: blueviolet">Last login<br/></li>
+        <li style="list-style-type: none;margin-left:180px;text-align: left; margin-top:0px;font-size: medium;">{{ profile_fields.last_login }}<br/></li>
+        <hr  style="margin-left: 180px; width: 400px; color: black;">
 
     </div>
     <div class="container">
@@ -17,7 +22,7 @@
         {% for album in albums %}
             <h2><a style="color: deeppink" href="{% url 'music_nation:album_detail' username album %}"><img src="https://img.icons8.com/ios/452/music-album.png" height="32px"> {{ album.album_name }}</a></h2>
             {% if album.album_artist == user %}
-                <a style="color: deepskyblue; font-size: large" href="{% url 'music_nation:delete_album' username album %}"><img src="https://image.flaticon.com/icons/png/512/40/40292.png" height="32px" "> Delete</a>
+                <a style="color: deepskyblue; font-size: large" href="{% url 'music_nation:delete_album' username album %}"><img src="https://image.flaticon.com/icons/png/512/40/40292.png" height="32px" > Delete</a>
             {% endif %}
             {% for song in album.songs.all %}
                 <li style="list-style-type: none; margin-left:70px;"><img src="https://icons-for-free.com/iconfiles/png/512/music-131964753036631366.png" height="32px">{{ song.song_name }}<br/>
